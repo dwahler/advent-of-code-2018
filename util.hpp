@@ -11,6 +11,9 @@
 #include <set>
 #include <unordered_set>
 #include <cstdlib>
+#include <algorithm>
+#include <list>
+#include <queue>
 
 namespace util {
     using namespace std;
