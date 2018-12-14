@@ -131,6 +131,21 @@ std::ostream& operator<<(std::ostream& os, const std::unordered_set<T>& s) {
 }
 
 template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::list<T>& s) {
+    os << "{";
+    bool first = true;
+    for (auto& it : s) {
+        if (!first) { 
+            os << ", ";
+        } else {
+            first = false;
+        }
+        os << it;
+    }
+    os << "}";
+    return os;
+}
+template <typename T>
 std::ostream& operator<<(std::ostream& os, const std::set<T>& s) {
     os << "{";
     bool first = true;
